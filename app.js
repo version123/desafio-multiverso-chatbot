@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 
 
 var assistant = new AssistantV1({
-  version: '2018-11-04',
-  iam_apikey: 'Du6D9frRa6rJgUqL-6fzHnuDkul6Fpx8nd0_smGzHiQG',
+  version: '',
+  iam_apikey: '',
   url: 'https://gateway-wdc.watsonplatform.net/assistant/api'
 });
  // http://expressjs.com/en/4x/api.html
@@ -19,7 +19,7 @@ app.post('/conversation/', (req, res) => {
     const { text, context = {} } = req.body;
      const params = {
         input: { text },
-        workspace_id: '472e8e09-db34-4917-8a01-5e8ac59f5bc4',
+        workspace_id: '',
         context
     };
      assistant.message(params, (err, response) => {
