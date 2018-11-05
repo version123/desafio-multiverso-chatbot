@@ -6,4 +6,4 @@ npm install --save express watson-developer-cloud body-parser
 
 após isso, colocar as chaves apikey, version e workspace_id enviadas no email no arquivo app.js
 executar o comando no terminal: node app.js
-abrir o navegador em http://localhost:8000
+abrir o navegador em http://localhost:8000.
