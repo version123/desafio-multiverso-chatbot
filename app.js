@@ -1,19 +1,17 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');
-const watson = require('./config.json');
  const path = require('path');
 var AssistantV1 = require('watson-developer-cloud/assistant/v1');
  const app = express();
  app.use(express.static('./configs'));
 app.use(bodyParser.json());
-app.use(cors());
+
  const port = 8000;
 
 
 var assistant = new AssistantV1({
-  version: '',
-  iam_apikey: '',
+  version: '2018-11-04',
+  iam_apikey: 'Du6D9frRa6rJgUqL-6fzHnuDkul6Fpx8nd0_smGzHiQG',
   url: 'https://gateway-wdc.watsonplatform.net/assistant/api'
 });
  // http://expressjs.com/en/4x/api.html
@@ -21,7 +19,7 @@ app.post('/conversation/', (req, res) => {
     const { text, context = {} } = req.body;
      const params = {
         input: { text },
-        workspace_id: '',
+        workspace_id: '472e8e09-db34-4917-8a01-5e8ac59f5bc4',
         context
     };
      assistant.message(params, (err, response) => {
