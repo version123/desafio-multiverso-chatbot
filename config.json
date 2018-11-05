@@ -1,0 +1,12 @@
+{
+  "conversation": [
+    {
+      "name": "watsonjell-conversation-1541314156421",
+      "credentials": {
+        "apikey": "Du6D9frRa6rJgUqL-6fzHnuDkul6Fpx8nd0_smGzHiQG",
+        "url": "https://gateway-wdc.watsonplatform.net/assistant/api",
+	"workspace_id": "472e8e09-db34-4917-8a01-5e8ac59f5bc4"
+      }
+    }
+  ]
+}
